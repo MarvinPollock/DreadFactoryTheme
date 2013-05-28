@@ -246,57 +246,123 @@ margin-left: 15px;
 width:960px;
 }
 
+#boxContainer{
+  width: 960px;
+  height: 480px;
+  font-family: Arial;
+  font-size: 45px;
+  font-color: black;
 
+}
+#boxContainer a{
+  color: white;
+  text-decoration: none;
+}
 .bigBox{
-  margin: 1px;
-  width: 318px;
-  height: 158px;
+  margin: 3px;
+  width: 314px;
+  height: 154px;
   float: left;
-  background-color: orange;
+font-size: 35px;
+  line-height: 1.214286;
 }
 .smallBox{
-  margin: 1px;
-  width: 158px;
-  height: 158px;
+  margin: 3px;
+  width: 154px;
+  height: 154px;
   float: left;
   background-color: green;
+  font-size: 28px;
+  line-height: 1.214286;
+}
+.bigBox a{
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.bigBox img, .smallBox img{
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.smallBox a{
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 #leftBoxes, #rightBoxes{
   width: 480px;
   height: 480px;
   float:left;
 }
-#boxContainer{
-  width: 960px;
-  height: 480px;
-}
 #galleryBox{
-  margin: 1px;
-  width: 478px;
-  height: 318px;
+  margin: 3px;
+  width: 474px;
+  height: 314px;
+  border: 1px #000;
   background-color: #060;
+  font-size: 50px;
 }
+/*#galleryBox a{
+  top: 238px;
+  padding-top: 251px;
+  padding-left: 38px;
+} */
 #TVBox{
-  background-color: #070;
+  background-color: #7aa669;
 }
 #poppyBox{
-  background-color: #050;
+  background-color: #acc84f;
+
+}
+#poppyBox a{
+
 }
 #infoBox{
-  background-color: #070;
+  background-color: #acc84f;
+
+}
+#infoBox a{
+
 }
 #locationBox{
   background-color: #050;
+} 
+#locationBox a{
+
 }
-#contentBox{
-  background-color: #050;
+#contactBox{
+  background-color: #7aa669;
+}
+#contactBox a{
+
 }
 #shopBox{
-  background-color: #060;
+
+  background-color: #723e29;
+  background-image: url('http://it.marvin-pollock.com/wp-content/uploads/2013/04/DreadFactory-Shop-bg.png');
+  background-repeat: no-repeat;
+  background-position-x: -30px;
+}
+#shopBox a{
+
 }
 #teamBox{
-  background-color: #070;
+  background-color: #060;
+
+}
+#teamBox a{
+
 }
 #partnerBox{
-  background-color: #080;
+  background-color: #7aa669;
+}
+#partnerBox a, #TVBox a{
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	#boxContainer {
+		display: none;
+	}
 }
